@@ -1,3 +1,13 @@
+<script>
+import DarkModeSwitch from '../molecules/DarkModeSwitch.vue';
+
+export default {
+  components: {
+    DarkModeSwitch,
+  },
+};
+</script>
+
 <template>
   <el-header class="header">
     <el-row justify="space-between" align="middle">
@@ -5,7 +15,7 @@
         <p>Dependency Scanner</p>
       </el-col>
       <el-col :span="4">
-        <el-switch active-icon="Moon" inactive-icon="Sunny" />
+        <dark-mode-switch />
       </el-col>
     </el-row>
   </el-header>

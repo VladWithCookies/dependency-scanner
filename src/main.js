@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import * as ElementPlusIconsVue from '@element-plus/icons-vue';
+import 'element-plus/theme-chalk/dark/css-vars.css';
 
 import routes from './constants/routes';
 import App from './App.vue';
