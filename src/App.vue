@@ -1,4 +1,5 @@
 <script>
+import { RouterView } from 'vue-router';
 import { ElConfigProvider } from 'element-plus';
 
 import Home from './components/pages/Home.vue';
@@ -6,9 +7,10 @@ import MainLayout from './components/templates/MainLayout.vue';
 
 export default {
   components: {
+    RouterView,
+    ElConfigProvider,
     Home,
     MainLayout,
-    ElConfigProvider,
   },
 };
 </script>
@@ -16,7 +18,7 @@ export default {
 <template>
   <el-config-provider>
     <main-layout>
-      <home />
+      <router-view />
     </main-layout>
   </el-config-provider>
 </template>

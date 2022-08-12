@@ -1,5 +1,27 @@
+<script>
+export default {
+  props: ['value'],
+  emits: ['update:modelValue'],
+  computed: {
+    files: {
+      get() {
+        return this.value;
+      },
+      set(files) {
+        this.$emit('update:modelValue', files);
+      },
+    },
+  },
+};
+</script>
+
 <template>
-  <el-upload drag multiple>
+  <el-upload
+    drag
+    multiple
+    v-model:file-list="files"
+    :auto-upload="false"
+>
     <el-icon class="el-icon--upload">
       <UploadFilled />
     </el-icon>
