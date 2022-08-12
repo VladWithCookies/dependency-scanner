@@ -10,7 +10,13 @@ export default {
 
 <template>
   <navigation-bar />
-  <el-main>
-    <slot></slot>
-  </el-main>
+  <el-container class="container" direction="vertical">
+    <el-row>
+      <el-col :span="20" :offset="2">
+        <el-main>
+          <slot></slot>
+        </el-main>
+      </el-col>
+    </el-row>
+  </el-container>
 </template>
