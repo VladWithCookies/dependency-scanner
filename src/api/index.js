@@ -1,5 +1,5 @@
 import * as ENDPOINTS from '../constants/endpoints';
-import httpClient from '../utils/httpClient';
+import httpClient from '../utils/api/httpClient';
 
 export const uploadDependencyFile = (file, ciUploadId) => {
   const formData = new FormData();
