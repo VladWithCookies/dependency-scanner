@@ -1,7 +1,12 @@
 <script>
+import { UploadFilled } from '@element-plus/icons-vue';
+
 export default {
   props: ['value'],
   emits: ['update:modelValue'],
+  components: {
+    UploadFilled,
+  },
   computed: {
     files: {
       get() {
@@ -23,7 +28,7 @@ export default {
     :auto-upload="false"
 >
     <el-icon class="el-icon--upload">
-      <UploadFilled />
+      <upload-filled />
     </el-icon>
     <p class="el-upload__text">
       Drop package-lock.json or yarn.lock file here or <em>click to upload</em>

@@ -5,7 +5,7 @@ import httpClient from '../../utils/api/httpClient';
 
 describe('API', () => {
   const ciUploadId = '1';
-  const file = new File([''], 'package-lock.json', { type: 'text/plain  ' });
+  const file = new File([''], 'package-lock.json', { type: 'text/plain' });
 
   beforeEach(() => {
     vi.clearAllMocks();

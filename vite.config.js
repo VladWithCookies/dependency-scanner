@@ -24,5 +24,8 @@ export default defineConfig({
     coverage: {
       100: true,
     },
+    deps: {
+      inline: ['element-plus'],
+    },
   },
 });
