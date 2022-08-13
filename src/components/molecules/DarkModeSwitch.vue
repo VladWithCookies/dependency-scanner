@@ -1,14 +1,30 @@
 <script>
 export default {
   data: () => ({
-    darkModeEnabled: false
+    darkModeEnabled: localStorage.getItem('theme') === 'dark',
   }),
-  watch: {
-    darkModeEnabled() {
+  computed: {
+    html() {
       const [html] = document.getElementsByTagName('html');
 
-      html.classList.toggle('dark');
+      return html;
     },
+  },
+  watch: {
+    darkModeEnabled() {
+      this.html.classList.toggle('dark');
+
+      if (this.darkModeEnabled) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.removeItem('theme');
+      }
+    },
+  },
+  mounted () {
+    if (this.darkModeEnabled) {
+      this.html.classList.add('dark');
+    }
   },
 };
 </script>

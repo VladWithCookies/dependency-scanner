@@ -30,7 +30,7 @@ export default {
     this.pollCIStatus();
   },
   beforeUnmount () {
-	  clearInterval(this.polling)
+	  clearInterval(this.polling);
   },
 };
 </script>

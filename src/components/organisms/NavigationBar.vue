@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <el-header class="header">
+  <el-header>
     <el-row justify="space-between" align="middle">
       <el-col :span="20">
         <p>Dependency Scanner</p>
@@ -20,9 +20,3 @@ export default {
     </el-row>
   </el-header>
 </template>
-
-<style>
-.header {
-  padding: 0 20px;
-}
-</style>
