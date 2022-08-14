@@ -44,7 +44,7 @@ export default {
     :title="error"
     :closable="false"
   />
-  <div class="actions">
+  <div :class="$style.actions">
     <el-button
       type="primary"
       size="large"
@@ -56,10 +56,7 @@ export default {
   </div>
 </template>
 
-<style>
-.container {
-  margin-top: 80px;
-}
+<style module>
 .actions {
   margin-top: 40px;
   display: flex;

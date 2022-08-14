@@ -36,14 +36,14 @@ export default {
 </script>
 
 <template>
-  <div class="progress" v-if="progress < 100">
+  <div :class="$style.progress" v-if="progress < 100">
     <el-progress type="circle" :percentage="progress" />
     <p>Generating report...</p>
   </div>
   <vulnerability-stats v-else :count="vulnerabilityCount" />
 </template>
 
-<style>
+<style module>
 .progress {
   display: flex;
   align-items: center;

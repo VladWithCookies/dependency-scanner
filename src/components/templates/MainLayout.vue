@@ -10,7 +10,7 @@ export default {
 
 <template>
   <navigation-bar />
-  <el-container class="container" direction="vertical">
+  <el-container :class="$style.container" direction="vertical">
     <el-row>
       <el-col :span="20" :offset="2">
         <el-main>
@@ -20,3 +20,9 @@ export default {
     </el-row>
   </el-container>
 </template>
+
+<style module>
+.container {
+  margin-top: 80px;
+}
+</style>
