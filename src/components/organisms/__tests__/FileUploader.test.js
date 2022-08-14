@@ -7,8 +7,8 @@ describe('FileUploader', () => {
   const filename = 'package-lock.json';
   const file = new File([''], filename, { type: 'text/plain' });
 
-  describe('when user uploads file', () => {
-    it('shows uploaded file in files list', async () => {
+  describe('when user uploads a file', () => {
+    it('shows uploaded file in the files list', async () => {
       const { container } = render(FileUploader);
 
       userEvent.upload(container.querySelector('input[name="file"]'), file);

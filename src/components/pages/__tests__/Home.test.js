@@ -23,7 +23,7 @@ describe('Home', () => {
   });
 
   describe('when user starts file uploading', () => {
-    it('disables upload button', async () => {
+    it('disables Generate Report button', async () => {
       const { container } = render(Home);
 
       userEvent.upload(container.querySelector('input[name="file"]'), file);

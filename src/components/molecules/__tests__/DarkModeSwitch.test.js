@@ -21,7 +21,7 @@ describe('DarkModeSwitch', () => {
   });
 
   describe('when user turns on dark mode', () => {
-    it('adds correct class to html element', async () => {
+    it('adds correct class to the html element', async () => {
       const { container } = render(DarkModeSwitch);
 
       userEvent.click(container.querySelector('input[type="checkbox"]'));
@@ -38,7 +38,7 @@ describe('DarkModeSwitch', () => {
   });
 
   describe('when user turns off dark mode', () => {
-    it('removes correct class from html element', async () => {
+    it('removes correct class from the html element', async () => {
       const { container } = render(DarkModeSwitch);
 
       userEvent.click(container.querySelector('input[type="checkbox"]'));
@@ -53,8 +53,8 @@ describe('DarkModeSwitch', () => {
     });
   });
 
-  describe('when user has theme settings in local storage', () => {
-    it('adds correct class to html element', async () => {
+  describe('when user has theme settings in the local storage', () => {
+    it('adds correct class to the html element', async () => {
       vi.spyOn(Storage.prototype, 'getItem').mockReturnValueOnce('dark');
 
       render(DarkModeSwitch);

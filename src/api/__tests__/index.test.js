@@ -17,7 +17,7 @@ describe('API', () => {
     vi.spyOn(httpClient, 'post');
 
     describe('with ciUploadId', () => {
-      it('creates correct request', () => {
+      it('calls correct endpoint with correct params', () => {
         const formData = new FormData();
 
         formData.append('repositoryName', 'unknown');
@@ -33,7 +33,7 @@ describe('API', () => {
     });
 
     describe('without ciUploadId', () => {
-      it('creates correct request', () => {
+      it('calls correct endpoint with correct params', () => {
         const formData = new FormData();
 
         formData.append('repositoryName', 'unknown');
@@ -49,7 +49,7 @@ describe('API', () => {
   });
 
   describe('scanDependencies()', () => {
-    it('creates correct request', () => {
+    it('calls correct endpoint with correct params', () => {
       api.scanDependencies(ciUploadId);
 
       expect(httpClient.post).toBeCalledTimes(1);
@@ -58,7 +58,7 @@ describe('API', () => {
   });
 
   describe('getCIStatus()', () => {
-    it('creates correct request', () => {
+    it('calls correct endpoint with correct params', () => {
       api.getCIStatus(ciUploadId);
 
       expect(httpClient.get).toBeCalledTimes(1);

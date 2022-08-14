@@ -1,7 +1,9 @@
 <script>
+import { THEMES } from '@/constants';
+
 export default {
   data: () => ({
-    darkModeEnabled: localStorage.getItem('theme') === 'dark',
+    darkModeEnabled: localStorage.getItem('theme') === THEMES.DARK,
   }),
   computed: {
     html() {
@@ -12,10 +14,10 @@ export default {
   },
   watch: {
     darkModeEnabled() {
-      this.html.classList.toggle('dark');
+      this.html.classList.toggle(THEMES.DARK);
 
       if (this.darkModeEnabled) {
-        localStorage.setItem('theme', 'dark');
+        localStorage.setItem('theme', THEMES.DARK);
       } else {
         localStorage.removeItem('theme');
       }
@@ -23,7 +25,7 @@ export default {
   },
   mounted () {
     if (this.darkModeEnabled) {
-      this.html.classList.add('dark');
+      this.html.classList.add(THEMES.DARK);
     }
   },
 };
