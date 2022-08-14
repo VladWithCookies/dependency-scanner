@@ -1,6 +1,6 @@
 <script>
-import { uploadDependencyFile, scanDependencies } from '../../api';
-import FileUploader from '../organisms/FileUploader.vue';
+import { uploadDependencyFile, scanDependencies } from '@/api';
+import FileUploader from '@/components/organisms/FileUploader.vue';
 
 export default {
   components: {

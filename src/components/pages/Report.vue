@@ -1,6 +1,6 @@
 <script>
-import { getCIStatus } from '../../api';
-import VulnerabilityStats from '../organisms/VulnerabilityStats.vue';
+import { getCIStatus } from '@/api';
+import VulnerabilityStats from '@/components/organisms/VulnerabilityStats.vue';
 
 export default {
   components: {

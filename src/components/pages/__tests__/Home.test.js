@@ -1,8 +1,8 @@
 import { render, screen, waitFor } from '@testing-library/vue';
 import userEvent from '@testing-library/user-event';
 
-import { server } from '../../../utils/tests/requestInterceptor';
-import { uploadDependencyFileErrorResponse } from '../../../utils/tests/requestHandlers';
+import { server } from '@/utils/tests/requestInterceptor';
+import { uploadDependencyFileErrorResponse } from '@/utils/tests/requestHandlers';
 import Home from '../Home.vue';
 
 describe('Home', () => {

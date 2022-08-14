@@ -1,7 +1,7 @@
 import { rest } from 'msw';
 
-import { API_URL } from '../../constants';
-import * as ENDPOINTS from '../../constants/endpoints';
+import { API_URL } from '@/constants';
+import * as ENDPOINTS from '@/constants/endpoints';
 
 export const uploadDependencyFileErrorResponse = rest.post(
   `${API_URL}${ENDPOINTS.OPEN_FINISHES_DEPENDENCIES_FILES_UPLOADS}`,

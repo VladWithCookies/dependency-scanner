@@ -1,7 +1,8 @@
 import { beforeEach, vi } from 'vitest';
+
+import * as ENDPOINTS from '@/constants/endpoints';
+import httpClient from '@/utils/api/httpClient';
 import * as api from '..';
-import * as ENDPOINTS from '../../constants/endpoints';
-import httpClient from '../../utils/api/httpClient';
 
 describe('API', () => {
   const ciUploadId = '1';

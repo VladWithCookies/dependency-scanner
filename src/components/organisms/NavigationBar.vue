@@ -1,5 +1,5 @@
 <script>
-import DarkModeSwitch from '../molecules/DarkModeSwitch.vue';
+import DarkModeSwitch from '@/components/molecules/DarkModeSwitch.vue';
 
 export default {
   components: {

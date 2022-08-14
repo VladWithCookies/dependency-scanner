@@ -1,5 +1,5 @@
 <script>
-import NavigationBar from '../organisms/NavigationBar.vue';
+import NavigationBar from '@/components/organisms/NavigationBar.vue';
 
 export default {
   components: {
