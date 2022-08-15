@@ -48,6 +48,8 @@ And then, run:
 npm run preview
 ```
 
+Now the app is available on [localhost:4173](http://localhost:4173).
+
 ## Docker
 The application also contains a `Dockerfile` suitable for deploying the production version of the app.
 
