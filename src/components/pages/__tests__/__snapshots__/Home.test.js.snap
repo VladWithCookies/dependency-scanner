@@ -65,7 +65,7 @@ exports[`Home > matches snapshot 1`] = `
   </div>
   <!--v-if-->
   <div
-    class="actions"
+    class="_actions_1xc0n_2"
   >
     <button
       aria-disabled="true"

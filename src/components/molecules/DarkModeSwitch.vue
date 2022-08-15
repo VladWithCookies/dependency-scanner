@@ -3,7 +3,7 @@ import { THEMES } from '@/constants';
 
 export default {
   data: () => ({
-    darkModeEnabled: false,
+    darkModeEnabled: localStorage.getItem('theme') === THEMES.DARK,
   }),
   computed: {
     html() {
@@ -22,9 +22,6 @@ export default {
         localStorage.removeItem('theme');
       }
     },
-  },
-  beforeMount () {
-    this.darkModeEnabled = localStorage.getItem('theme') === THEMES.DARK;
   },
   mounted () {
     if (this.darkModeEnabled) {
