@@ -1,4 +1,5 @@
 <script>
+import { POLL_INTERVAL } from '@/constants';
 import { getCIStatus } from '@/api';
 import VulnerabilityStats from '@/components/organisms/VulnerabilityStats.vue';
 
@@ -23,7 +24,7 @@ export default {
             clearInterval(this.polling);
           }
         });
-      }, 1000);
+      }, POLL_INTERVAL);
     },
   },
   mounted () {
