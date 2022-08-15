@@ -26,7 +26,7 @@ VITE_DEBRICKED_ACCESS_TOKEN=<Your Debricked Access Token>
 ## Development
 To run the app in development mode, run:
 ```bash
-npm run start
+npm run dev
 ```
 
 Now the app is available on [localhost:8080](http://localhost:8080).
